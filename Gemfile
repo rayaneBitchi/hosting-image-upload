@@ -20,6 +20,7 @@ gem "importmap-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
+gem "dotenv-rails"
 
 gem "bootstrap", "~> 5.2"
 gem "simple_form"
