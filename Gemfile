@@ -22,6 +22,8 @@ gem "turbo-rails"
 
 gem "dotenv-rails"
 
+gem "cloudinary"
+
 gem "bootstrap", "~> 5.2"
 gem "simple_form"
 gem "sassc-rails"
