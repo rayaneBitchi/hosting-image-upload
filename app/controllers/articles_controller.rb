@@ -29,6 +29,7 @@ class ArticlesController < ApplicationController
     end
     
     def destroy
+        @article.image.purge
         @article.destroy
         redirect_to root_path, status => :see_other
     end
@@ -36,7 +37,7 @@ class ArticlesController < ApplicationController
     private
 
     def article_params
-        params.require(:article).permit(:title, :body)
+        params.require(:article).permit(:title, :body, :image)
     end
 
     def set_article
